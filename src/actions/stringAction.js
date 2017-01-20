@@ -5,3 +5,4 @@ export function createString(string){
 export function updateString(){
     return {type: 'UPDATE_STRING', string: 'YOHOHO'};
 }
+

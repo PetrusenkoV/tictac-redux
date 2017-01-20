@@ -7,7 +7,7 @@ const temp = (props) => {
     return(
         <div>
             <div onClick={() => props.actions.createString("My Name is Slava")}>{props.tests}</div>
-            <div onClick={() => props.actions.updateString()}>Hello, World</div>
+            <div onClick={() => console.log(props.board[1])}>Hello, World</div>
         </div>
     );
 }
@@ -19,7 +19,8 @@ temp.propTypes = {
 
 function mapStateToProps(state, ownProps){
     return {
-        tests: state.tests
+        tests: state.tests,
+        board: state.board
     }
 }
 
